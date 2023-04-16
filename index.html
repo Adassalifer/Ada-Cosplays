@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300&family=Poppins:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<title>Ada Cosplays - Realizando Fantasias</title>	
+</head>	
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<div class="logo"><img src="logoadacosplay 1.png"></div>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobrenos.html">Sobre Nós</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="carousel">
+			<h1>Fantasias em Destaque</h1>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="1681591831116.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591831135.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591831080.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591831098.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591831061.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591831047.jpg"></div>
+			        <div class="swiper-slide"><img src="1681591830991.jpg"></div>
+			        
+			    <div class="swiper-pagination"></div>
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+		</section>
+		<section class="message">
+			<h1>Peça seu orçamento </h1>
+			<form action="enviar_email.php" method="post">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Todos os direitos reservados © Ada Cosplays</p>
+	</footer>	
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+	var mySwiper = new Swiper(".swiper-container", {
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			dynamicBullets: true
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev"
+		},
+	})
+</script>
+</html>
